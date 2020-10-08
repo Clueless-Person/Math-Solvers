@@ -15,12 +15,35 @@ p{
 
 
 <h1 style="color:#ffffff;font-size:50px;text-align:center;">Clueless-Persons's Local Hosting p5.js Testing</h1>
-<h2 style="color:#ffffff;font-size:50px;text-align:center;">Updated!!<h2>
+<h2 style="color:#ffffff;font-size:50px;text-align:center;">Updated!!!<h2>
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
 <script src="https://raw.github.com/Clueless-Person/Math-Solvers/main/p5.js"></script>
 <script src="https://raw.github.com/Clueless-Person/Math-Solvers/main/p5.dom.js"></script>
 <script src="https://raw.github.com/Clueless-Person/Math-Solvers/main/sketch.js"></script>
 
 </head>
 <body>
+<script type="text/p5">
+var x =.05;
+var z = .05;
+var s = 1;
+createCamera()
+function setup() {
+  createCanvas(800, 600, WEBGL);
+  background(100, 200, 100);
+  translate(width / 2,height/2, 100)
+  noStroke()
+
+}
+
+function draw() {
+  x += .05
+  z += .05
+  rotateX(x)
+  rotateZ(z)
+  sphere(100)
+  }
+
+</script>
 <p>This is a paragraph</p>
 </body>
